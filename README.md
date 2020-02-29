@@ -2,14 +2,14 @@
 A tool for finding suspicious Twitter accounts that are connected to yours
 
 ## Installation
-Netback is written in Go, so follow (these instructions)[https://golang.org/doc/install] to make sure Go is installed on your machine. Then just run the following command:
+Netback is written in Go, so follow [these instructions](https://golang.org/doc/install) to make sure Go is installed on your machine. Then just run the following command:
 
 ```go install github.com/mbellotti/netback```
 
 You can also download it from source and execute the program directly from its directory if you prefer. Commands in that case would be `go run main.go [command] -flags` instead of `netback [command] -flags`
 
 ## Configuration
-Netback needs Twitter API access through your account. The program does not need anything more than read permission on public Twitter data. You'll need a (developer account)[https://developer.twitter.com/] on Twitter. Create a new app and copy the API key, API Secret, access token and token secret. Then run `netback config` and enter in that information.
+Netback needs Twitter API access through your account. The program does not need anything more than read permission on public Twitter data. You'll need a [developer account](https://developer.twitter.com/) on Twitter. Create a new app and copy the API key, API Secret, access token and token secret. Then run `netback config` and enter in that information.
 
 ## Setting up a Profile
 The bot profile is the criteria Netback uses to determine whether an account looks suspicious or not. You can configure the profile to check for low activity accounts that might be fake followers or high activity accounts or some custom combination of features from both. Netback will ask you to set a weight for each criteria, assigning a weight of 0 effectively turns that criteria off.

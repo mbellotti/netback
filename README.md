@@ -4,7 +4,10 @@ A tool for finding suspicious Twitter accounts that are connected to yours
 ## Installation
 Netback is written in Go, so follow [these instructions](https://golang.org/doc/install) to make sure Go is installed on your machine. Then just run the following command:
 
-```go install github.com/mbellotti/netback```
+```
+go get github.com/mbellotti/netback
+go install github.com/mbellotti/netback
+```
 
 You can also download it from source and execute the program directly from its directory if you prefer. Commands in that case would be `go run main.go [command] -flags` instead of `netback [command] -flags`
 
